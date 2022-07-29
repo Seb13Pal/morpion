@@ -1,0 +1,66 @@
+body {
+    background-color: blue;
+}
+
+h1,
+p {
+
+    text-align: center;
+    color: white;
+    font-family: calibri;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    text-align: center;
+    border-radius: 10%;
+    height: 500px;
+    width: 500px;
+}
+
+td {
+    font-size: 75px;
+}
+
+input {
+    float: right;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+#morpion {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    background: red;
+    text-align: center;
+    border: black 5px solid;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.flash {
+    width: 150px;
+    height: 150px;
+    background: red;
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: white;
+    }
+}
